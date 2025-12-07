@@ -1,0 +1,16 @@
+kafka:
+  bootstrap_servers: localhost:9092
+  topic: stock-prices
+  consumer_group: stock-processors
+
+stocks:
+  symbols:
+    - AAPL
+    - GOOGL
+    - MSFT
+  fetch_interval: 60  # seconds
+
+paths:
+  bronze: ./data/bronze
+  silver: ./data/silver
+  gold: ./data/gold
